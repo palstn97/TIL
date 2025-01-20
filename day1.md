@@ -46,3 +46,22 @@
 - git init
   - 로컬 저장소를 설정하는 것이다. 즉 초기화하는 것이다.
   - 무언가를 시작하겠다고 선언하는 것이다. -> git의 버전 관리를 시작할 디렉토리에서 진행한다.
+- git add
+  - 변경 사항이 있는 파일을 staging area에 추가한다.
+- git commit
+  - staging area에 있는 파일들을 저장소에 기록한다.
+    - 해당 시점의 commit을 생성하고 변경 이력을 남기는 것이다.
+    - 이름이 필요하다. 즉 commit message가 필요하다.
+    - 'git commit -m "이름"' -> 버전 간의 작성자가 필요하다. 즉 누가 책임질 것인지를 정해야 한다. 그렇기에 commit을 생성하려면 commit 작성자 정보가 필요하다. 이때 필요한 것이 유저네임과 이메일이다. 이것은 처음에 한 번만 하면 되는 작업이다.
+    - git config --global user.email "메일 주소"
+    - git config --global user.name "유저 네임"
+    - 위의 두 가지 명령문이 commit 작성자 정보 설정 과정이다. global로 설정한 후 앞으로 재입력하지 않는다.
+  - git 안에 git은 존재할 수 없다. 
+  - 가장 위에 있는 git이 안에 있는 git의 존재를 알 수 없다.
+  - 항상 git init을 하기 전에 내가 어느 지점에 있는지 확인할 것!
+  - git status
+    - 현재의 git의 상태를 확인할 수 있는 것. 계속 사용해서 상태를 그때 그때 확인해주자.
+  - terminal에서 오류가 생겼을 때에는 'ctrl + c' 누를것
+  - terminal 화면 지워주려면 'ctrl + l' 누를것
+  - git은 로컬 저장소(git init)내에 있는 모든 파일의 '변경사항'을 감시하고 있다.
+  - 한꺼번에 파일을 add하고 싶다면 'git add .'를 하자.
